@@ -2,21 +2,16 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  var hash =  Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome Human!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <small>{hash}</small>
       </header>
     </div>
   );
